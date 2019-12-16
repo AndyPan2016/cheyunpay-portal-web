@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/**
+ * 钱包头部 Less
+ * @authors AndyPan (pye-mail@163.com)
+ * @date    2019年9月27日10:21:06
+ */
+
+@import "../../../assets/less/commons/_mixins.less";
+
+.wallet-header{
+  margin: 0 12px;
+  height: 330px;
+  background: url('../../../assets/images/background/bg-wall-header.png') 0 0 no-repeat;
+  background-size: 100% 100%;
+  padding: 48px;
+  .border-radius(12px);
+  overflow: hidden;
+  .account-info{
+      @infoH: 50px;
+      height: 50px;
+      position: relative;
+      .account-name{
+          height: @infoH;
+          line-height: @infoH;
+          font-size: 32px;
+          color: @color-ffffff;
+        //   max-width: 290px;
+          max-width: 460px;
+          .text-overflow();
+          float: left;
+          margin-right: 10px;
+      }
+      .account-type{
+          float: left;
+          height: 40px;
+          line-height: 40px;
+          padding: 0 24px;
+          margin: 8px 0;
+          margin-bottom: 0;
+          font-size: 24px;
+          color: @color-ffffff;
+          background: rgba(23, 102, 181, 0.2);
+          .border-radius(20px);
+      }
+      .choose-account-type{
+          float: right;
+          color: @color-43A1FF;
+          font-size: 24px;
+          height: @infoH;
+          line-height: @infoH;
+          background: @color-ffffff;
+          .border-radius(30px);
+          padding: 0 22px;
+          text-decoration: none;
+          outline: none;
+      }
+  }
+  .account-money{
+      height: 60px;
+      line-height: 60px;
+      padding-left: 32px;
+      padding-right: 50px;
+      .text-overflow();
+      color: @color-ffffff;
+      font-size: 36px;
+      margin: 40px auto;
+      text-align: left;
+      position: relative;
+      font-family: 'bahnschrift';
+      &::before {
+          content: '￥';
+          position: absolute;
+          left: 0;
+          bottom: 10px;
+          font-size: 24px;
+          height: 30px;
+          line-height: 30px;
+      }
+      &::after {
+          content: '';
+          width: 62px;
+          height: 79px;
+          position: absolute;
+          right: 0;
+          top: 10px;
+          background: url('../../../assets/images/icon/icon-account-money.png') 0 -12px no-repeat;
+          background-size: 100% 100%;
+      }
+  }
+  .account-num{
+      height: 32px;
+      line-height: 32px;
+      color: @color-ffffff;
+      font-size: 24px;
+      .money-label {
+          float: left;
+      }
+      .number {
+          float: right;
+      }
+  }
+}

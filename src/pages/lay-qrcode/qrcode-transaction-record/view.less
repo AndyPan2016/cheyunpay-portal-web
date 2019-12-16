@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/**
+ * 摆牌二维码交易记录 Less
+ * @authors AndyPan (pye-mail@163.com)
+ * @date    2019年9月28日15:31:50
+ */
+
+@import "../../../assets/less/commons/_mixins.less";
+@import "../../../assets/less/common.less";
+
+
+
+.page-bill-list{
+    @searchHeight: 112px;
+    .bill-search-wrap{
+        // height: @searchHeight;
+        // line-height: @searchHeight;
+        background: @color-ffffff;
+        padding: 0 30px;
+        padding-bottom: 30px;
+        text-align: left;
+        height: auto;
+        &.height-plus{
+            height: 200px;
+        }
+        .select-search {
+            margin-right: 20px;
+            margin-top: 30px;
+        }
+    }
+    .scroll-class{
+        top: @searchHeight;
+        &.scroll-plus{
+            top: @searchHeight + 100px;
+        }
+    }
+    .bill-assets-null{
+        height: 100px;
+        line-height: 100px;
+        color: @color-cccccc;
+    }
+}

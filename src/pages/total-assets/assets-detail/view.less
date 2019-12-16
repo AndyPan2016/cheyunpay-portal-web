@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/**
+ * 账单详情 Less
+ * @authors AndyPan (pye-mail@163.com)
+ * @date    2019年9月22日13:54:16
+ */
+
+@import "../../../assets/less/commons/_mixins.less";
+@import "../../../assets/less/common.less";
+
+.page-bill-detail{
+    padding-top: 20px;
+    .bill-form{
+        .ui-form-block{
+            .ui-form-item{
+                &.txt-status-default {
+                    .form-item-txt{
+                        color: @color-primary;
+                    }
+                }
+                &.txt-status-error {
+                    .form-item-txt{
+                        color: @color-FF3B30;
+                    }
+                }
+            }
+        }
+    }
+}
+

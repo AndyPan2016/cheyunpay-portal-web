@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/**
+ * 账单资产列表 Less
+ * @authors AndyPan (pye-mail@163.com)
+ * @date    2019年9月26日16:23:22
+ */
+
+@import "../../../assets/less/commons/_mixins.less";
+
+.bill-assets-list {
+  .bill-list-date{
+    font-size: 28px;
+    color: @color-222222;
+    text-align: left;
+    padding: 30px;
+  }
+  .bill-list-item{
+    background: @color-ffffff;
+    padding: 30px;
+    text-align: left;
+    margin-bottom: 4px;
+    position: relative;
+    .list-item-mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0);
+      z-index: 10;
+    }
+    .bill-item-title{
+      position: relative;
+      padding-right: 200px;
+      .text-overflow();
+      font-size: 32px;
+      color: @color-222222;
+      height: 44px;
+      line-height: 44px;
+      .money{
+        float: right;
+        margin-right: -200px;
+      }
+    }
+    &.txt-status-default {
+      .bill-item-title{
+        .money{
+          color: @color-primary;
+        }
+      }
+    }
+    &.txt-status-error {
+      .bill-item-title{
+        .money{
+          color: @color-FF3B30;
+        }
+      }
+    }
+    .bill-item-date{
+      height: 40px;
+      line-height: 40px;
+      font-size: 28px;
+      color: @color-cccccc;
+      .text-overflow();
+      margin-top: 10px;
+      &.date-complate{
+        padding-right: 200px;
+      }
+      &.formal{
+        color: @color-666666;
+      }
+      &.formal-value {
+        .status{
+          color: @color-666666;
+        }
+      }
+      .status {
+        color: @color-222222;
+        float: right;
+        margin-right: -200px;
+      }
+    }
+  }
+  .bill-list-tip{
+    margin-top: 40px;
+    margin-bottom: 100px;
+    font-size: 28px;
+    color: @color-cccccc;
+    text-align: center;
+  }
+}

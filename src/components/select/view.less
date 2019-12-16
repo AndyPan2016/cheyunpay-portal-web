@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/**
+ * 下拉 Less
+ * @authors AndyPan (pye-mail@163.com)
+ * @date    2018-06-08 10:41:22
+ */
+
+@import "../../assets/less/commons/_mixins.less";
+
+.ui-select {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  height: 52px;
+  line-height: 52px;
+  padding: 0 30px;
+  padding-right: 54px;
+  position: relative;
+  font-size: 24px;
+  color: @color-222222;
+  background: @color-F5F5F5;
+  border-radius: 40px;
+  &.theme-white {
+    background: @color-ffffff;
+  }
+  &.size-max {
+    height: 64px;
+    line-height: 64px;
+  }
+  &.box-shadow {
+    .box-shadow();
+  }
+  &::after{
+    display: inline-block;
+    content: '';
+    width: 15px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    right: 28px;
+    background: url(./images/icon-select-default.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+  }
+  &.disabled {
+    color: @color-cccccc;
+    &::after{
+      background: url(./images/icon-select-disabled.png) 0 0 no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+  &.selected {
+    background: @color-primary;
+    color: @color-ffffff;
+    &::after{
+      background: url(./images/icon-select-selected.png) 0 0 no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+}

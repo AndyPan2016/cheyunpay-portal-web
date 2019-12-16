@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/**
+ * 二维码列表 Less
+ * @authors AndyPan (pye-mail@163.com)
+ * @date    2019年9月27日13:49:35
+ */
+
+@import "../../../assets/less/commons/_mixins.less";
+
+.qrcode-list-wrap{
+  margin: 0 30px;
+  .qrcode-list-item{
+    padding: 40px 34px;
+    background: url(../../../assets/images/background/bg-qrcode.png) bottom right no-repeat;
+    background-size: auto 136px;
+    background-color: @color-ffffff;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    .box-shadow(0 0 12px @color-cccccc);
+    text-align: left;
+    position: relative;
+    .qrcode-thumb{
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      border: 2px solid @color-eeeeee;
+      .thumb{
+        display: block;
+        margin: 5px;
+        width: 190px;
+        height: 190px;
+        img{
+          width: 185px;
+          height: 185px;
+        }
+      }
+    }
+    .qrcode-cont{
+      position: absolute;
+      top: 40px;
+      right: 28px;
+      bottom: 40px;
+      left: 270px;
+      background: url('../../../assets/images/icon/icon-arrow-right.png') center right no-repeat;
+      background-size: 26px 43px;
+      .cont-item{
+        display: block;
+        margin-right: 36px;
+        margin-top: 20px;
+        &:first-child{
+          margin-top: 0;
+        }
+        .label, .value{
+          display: block;
+          height: 40px;
+          line-height: 40px;
+          font-size: 28px;
+          color: @color-cccccc;
+          .text-overflow();
+        }
+        .value{
+          color: @color-222222;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

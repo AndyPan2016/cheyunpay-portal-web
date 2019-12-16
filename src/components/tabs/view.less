@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/**
+ * Tabs Less
+ * @authors AndyPan (pye-mail@163.com)
+ * @date    2018年8月21日15:51:50;
+ */
+
+@import "../../assets/less/commons/_mixins.less";
+
+.ui-tabs{
+	@hdHeight: 45px;
+	&.no-hd{
+		.ui-tabs-bd{
+			top: 0;
+		}
+	}
+	.ui-tabs-hd{
+		height: @hdHeight;
+		display: flex;
+		flex-direction: row;
+		background: #FFF;
+
+		.tabs-hd-item{
+			flex-grow: 1;
+			text-align: center;
+			line-height: @hdHeight;
+			position: relative;
+			.transition(all .2s ease);
+			text-decoration: none;
+			outline: none;
+			color: #666666;
+			font-size: 14px;
+			&.active{
+				color: #389ffe;
+				&:before{
+					background: rgba(56, 159, 254, 1);
+				}
+			}
+			&:before{
+				content: '';
+				display: inline-block;
+				width: 100%;
+				height: 2px;
+				background: rgba(56, 159, 254, 0);
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				.transition(all .2s ease);
+			}
+			&:after{
+				content: '';
+				display: inline-block;
+				width: 1px;
+				height: 40%;
+				background: #e5e5e5;
+				position: absolute;
+				right: 0;
+				top: 30%;
+			}
+			&:last-child{
+				&:after{display:none;}
+			}
+		}
+	}
+	.ui-tabs-bd{
+		position: absolute;
+		top: @hdHeight;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		overflow: hidden;
+		overflow-y: auto;
+		.tabs-bd-wrap{
+			.transition(all 0.2s ease);
+			.clearfix();
+			margin-left: 0;
+		}
+		.tabs-bd-item{
+			display: none;
+			float: left;
+			&.active{
+				display: block;
+			}
+		}
+	}
+	&.switch-animation{
+		.ui-tabs-bd{
+			.tabs-bd-item{
+				display: block;
+				opacity: 0;
+				&.active{
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

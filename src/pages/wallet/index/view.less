@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/**
+ * 钱包 Less
+ * @authors AndyPan (pye-mail@163.com)
+ * @date    2019年9月3日09:57:41
+ */
+
+@import "../../../assets/less/commons/_mixins.less";
+@import "../../../assets/less/common.less";
+
+.page-main-wallet{
+    .wallet-wrap{
+        background: @color-ffffff;
+        padding: 20px 0;
+    }
+    .wallet-nav{
+        margin-top: 10px;
+        height: 122px;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: row;
+        .wallet-nav-item{
+            flex-grow: 1;
+            text-align: center;
+            .nav-item-text{
+                margin-top: 20px;
+                display: inline-block;
+                width: 100%;
+                font-size: 28px;
+                color: @color-333333;
+            }
+        }
+    }
+    .wallet-cell-wrap{
+        margin: 20px auto;
+    }
+    .ad-span{
+        height: 150px;
+        img{
+            width: 100%;
+        }
+        .wh_content{
+            .wh_indicator{
+                bottom: 5px;
+                .wh_indicator_item{
+                    width: 30px;
+                    border-radius: 0;
+                    background: @color-ffffff;
+                    &.wh_show_bgcolor{
+                        background: @color-43A1FF;
+                    }
+                }
+            }
+        }
+    }
+}

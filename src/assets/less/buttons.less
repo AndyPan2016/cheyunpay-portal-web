@@ -1,0 +1,54 @@
+/**
+ * 按钮样式
+ * authors AndyPan (pye-mail@163.com)
+ * date    2019年9月11日20:31:23
+ */
+
+/* Horizontal gradient, from left to right（水平渐变，从左到右） */
+.horizontal(@start-color: #555, @end-color: #333, @start-percent: 0%, @end-percent: 100%) {
+    background-image: -webkit-gradient(linear, @start-percent top, @end-percent top, from(@start-color), to(@end-color)); /*Safari 4+, Chrome 2+*/ 
+    background-image: -webkit-linear-gradient(left, color-stop(@start-color @start-percent), color-stop(@end-color @end-percent)); /* Safari 5.1+, Chrome 10+*/
+    background-image: -moz-linear-gradient(left, @start-color @start-percent, @end-color @end-percent); /* FF 3.6+*/
+    background-image:  linear-gradient(to right, @start-color @start-percent, @end-color @end-percent); /* Standard, IE10*/
+    background-repeat: repeat-x;
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",argb(@start-color),argb(@end-color))); /*IE9 and down*/ 
+}
+
+@btnHeight: 100px;
+
+input.ui-button,
+button.ui-button {
+    width: 100%;
+}
+.ui-button {
+    height: @btnHeight;
+    line-height: @btnHeight;
+    text-align: center;
+    .horizontal(#43D4F9, #3A8FEC);
+    display: block;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+    font-size: 32px;
+    color: #ffffff;
+
+    &.button-inline {
+        height: 64px;
+        line-height: 64px;
+        font-size: 28px;
+        display: inline-block;
+        padding: 0 30px;
+        margin: 0 10px;
+    }
+
+    &.button-reset {
+        background: #ffffff;
+        color: #3A8FEC;
+        border: 2px solid #3A8FEC;
+    }
+    &.button-disabled {
+        background: #dddddd;
+    }
+}

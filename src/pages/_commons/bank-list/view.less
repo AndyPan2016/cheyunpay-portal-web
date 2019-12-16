@@ -1,0 +1,1348 @@
+@charset "UTF-8";
+/**
+ * 银行卡列表 Less
+ * @authors AndyPan (pye-mail@163.com)
+ * @date    2019年9月20日11:08:18
+ */
+
+@import "../../../assets/less/commons/_mixins.less";
+
+.page-bank-list{
+  .bank-list-wrap{
+      margin: 30px;
+      .bank-item {
+          height: 260px;
+          border-radius: 12px;
+          margin-bottom: 20px;
+          position: relative;
+          .horizontal(#43D4F9, #3A8FEC);
+          .bank-unbind{
+              background: #156FB5;
+          }
+          &.CMB127{
+            .horizontal(#FFC985, #FE5E76);
+            .bank-unbind{
+                background: #F3231E;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/CMB127.png');
+                }
+            }
+          }
+          &.CCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/CCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.ABC{
+            .horizontal(#9BE680, #12A56A);
+            .bank-unbind{
+                background: #3F8A11;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/ABC.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.CQFMB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/CQFMB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.BCM{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/BCM.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.BHRCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/BHRCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.BJRCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/BJRCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.BOB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/BOB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.BOBD{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/BOBD.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.BOC{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/BOC.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.BOCD{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/BOCD.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.BODL{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/BODL.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.BOGL{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/BOGL.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.BOGY{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/BOGY.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.BOJN{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/BOJN.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.BOLJ{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/BOLJ.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.BOLY{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/BOLY.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.BONC{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/BONC.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.BOS{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/BOS.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.BOSJ{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/BOSJ.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.BOXIA{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/BOXIA.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.BOXM{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/BOXM.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.BOYK{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/BOYK.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.BOZZ{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/BOZZ.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.BSB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/BSB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.CBHB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/CBHB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.CEB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/CEB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.CGB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/CGB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.CHAB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/CHAB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.CIB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/CIB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.CITIC{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/CITIC.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.CJCCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/CJCCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.CMBC{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/CMBC.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.CQCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/CQCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.CQRCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/CQRCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.CQTGB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/CQTGB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.DRCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/DRCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.DYCCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/DYCCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.DYLSCZ{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/DYLSCZ.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.DZB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/DZB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.EGB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/EGB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.GDNYB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/GDNYB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.GRCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/GRCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.GSNX{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/GSNX.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.GXNX{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/GXNX.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.GZCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/GZCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.HANABANK{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/HANABANK.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.HBNX{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/HBNX.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.HKB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/HKB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.HNNX{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/HNNX.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.HSB129{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/HSB129.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.HUBNX{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/HUBNX.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.HUNNX{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/HUNNX.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.HXB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/HXB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.HZB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/HZB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.ICBC{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/ICBC.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.JJCCB126{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/JJCCB126.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.JLNX{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/JLNX.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.JNRCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/JNRCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.JSB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/JSB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.JSNX{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/JSNX.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.JYRCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/JYRCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.JZB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/JZB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.JZCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/JZCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.KSRCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/KSRCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.LNNX{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/LNNX.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.LSB130{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/LSB130.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.LSCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/LSCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.LWB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/LWB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.LYCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/LYCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.LZCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/LZCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.NBCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/NBCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.NJCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/NJCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.NMGNX{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/NMGNX.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.nxxn, &.PAB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/nxxn.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.ORDOS{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/ORDOS.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.PAB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/PAB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.PJCCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/PJCCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.PSBC{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/PSBC.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.PZHCCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/PZHCCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.QDCCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/QDCCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.QSB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/QSB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.RZB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/RZB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.SCNX{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/SCNX.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.SHBANK{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/SHBANK.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.SHXNX{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/SHXNX.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.SPDB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/SPDB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.SRCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/SRCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.SXNX{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/SXNX.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.TAB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/TAB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.TCRCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/TCRCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.TJRCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/TJRCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.URB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/URB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.WFCCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/WFCCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.WHCCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/WHCCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.WHRCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/WHRCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.WJRCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/WJRCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.WZCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/WZCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.XHDLCZ{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/XHDLCZ.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.XJNX{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/XJNX.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.YRRCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/YRRCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.YTCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/YTCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.ZJGRCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/ZJGRCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.ZJKCCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/ZJKCCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+          &.ZJTLCB{
+            .horizontal(#43D4F9, #3A8FEC);
+            .bank-unbind{
+                background: #156FB5;
+            }
+            .bank-name-wrap{
+                &::before {
+                    background-image: url('../../../assets/images/bank/ZJTLCB.png');
+                    background-size: 72px 72px;
+                }
+            }
+          }
+
+          .bank-name-wrap{
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            right: 196px;
+            height: 96px;
+            padding-left: 116px;
+            &::before, .bank-logo {
+                content: '';
+                display: inline-block;
+                width: 96px;
+                height: 96px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: @color-ffffff;
+                background-size: 72px 72px;
+                background-position:  center center;
+                background-repeat: no-repeat;
+                border-radius: 100%;
+                overflow: hidden;
+            }
+            .bank-name{
+                height: 50px;
+                line-height: 50px;
+                color: @color-ffffff;
+                font-size: 36px;
+                text-align: left;
+                .text-overflow();
+            }
+            .bank-type{
+                height: 40px;
+                line-height: 40px;
+                color: @color-ffffff;
+                font-size: 28px;
+                text-align: left;
+                .text-overflow();
+                margin-top: 6px;
+            }
+          }
+          .bank-unbind{
+              position: absolute;
+              height: 40px;
+              line-height: 40px;
+              padding: 0 20px;
+              top: 30px;
+              right: 30px;
+              border-radius: 20px;
+              font-size: 24px;
+              color: @color-ffffff;
+          }
+          .bank-number{
+              height: 66px;
+              line-height: 66px;
+              text-align: center;
+              width: 100%;
+              position: absolute;
+              left: 30px;
+              right: 30px;
+              bottom: 30px;
+              .text-overflow();
+              font-size: 48px;
+              color: @color-ffffff;
+          }
+      }
+  }
+}

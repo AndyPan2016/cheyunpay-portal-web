@@ -1,0 +1,218 @@
+@charset "UTF-8";
+/**
+ * 表单元素及验证 Less
+ * @authors AndyPan (pye-mail@163.com)
+ * @date    2018年8月25日16:14:44;
+ */
+
+@import "../../assets/less/commons/_mixins.less";
+
+.ui-form{
+	.ui-form-block{
+		@itemPadding: 30px;
+		// background: #FFF;
+		// padding: 0 @itemPadding;
+		margin-bottom: 20px;
+
+		&.no-bg{
+			background: transparent;
+		}
+		&.no-margin{
+			margin: 0;
+		}
+		&.form-block-remark{
+			line-height: 86px;
+			text-align: center;
+			font-size: 24px;
+			color: @color-bbbbbb;
+			&.no-line-height {
+				line-height: initial;
+			}
+			.item-remark {
+				height: 50px;
+				line-height: 50px;
+				font-size: 28px;
+				color: @color-cccccc;
+			}
+			.remark-bold{
+				font-weight: bold;
+				color: @color-222222;
+			}
+		}
+		
+		@lineHeight: 100px;
+		.form-item-title{
+			height: @lineHeight;
+			line-height: @lineHeight;
+			text-align: left;
+			padding: 0 30px;
+			font-size: 28px;
+			color: @color-222222;
+		}
+		.ui-form-item{
+			background: #FFF;
+			min-height: @lineHeight;
+			border-bottom: 2px solid #eee;
+			position: relative;
+			padding: 0 @itemPadding;
+			font-family: 'webfont-regular';
+			
+			&.focus {
+				.form-item-inp{
+					right: 70px;
+				}
+				&:after {
+					content: '';
+					display: inline-block;
+					width: 26px;
+					height: 26px;
+					position: absolute;
+					z-index: 10;
+					right: @itemPadding;
+					top: 50%;
+					margin-top: -10px;
+					border-radius: 100%;
+					background: url(./images/icon-clean-inp.png) right center no-repeat;
+					background-size: 26px
+				}
+			}
+			&.error {
+				.form-item-lab {
+					color: @color-FF3B30;
+				}
+				.form-item-txt, .form-item-inp{
+					color: @color-FF3B30;
+					input{
+						cursor: pointer;
+						.placeholder(@color-FF3B30, 28px, 'webfont-regular')
+					}
+				}
+			}
+
+			&.no-border, &:last-child{
+				border: none;
+			}
+			&.item-icon {
+				&:after{
+					content: '';
+					display: inline-block;
+					width: 40px;
+					height: 100%;
+					position: absolute;
+					right: @itemPadding;
+					top: 0;
+				}
+			}
+			&.choose, &.default{
+				cursor: pointer;
+				&:after{
+					content: '';
+					display: inline-block;
+					width: 40px;
+					height: 100%;
+					position: absolute;
+					right: @itemPadding;
+					top: 0;
+					background: url(./images/icon-arrow.png) right center no-repeat;
+					background-size: 16px
+				}
+				.form-item-txt, .form-item-inp{
+					right: 70px;
+					input{
+						cursor: pointer;
+					}
+				}
+			}
+			&.title{
+				font-weight: bold;
+				padding-left: 30px;
+				&:before{
+					content: '';
+					display: inline-block;
+					width: 8px;
+					height: 50%;
+					background: #33CCFF;
+					position: absolute;
+					top: 50%;
+					margin-top: -(@lineHeight / 4);
+					left: 0;
+				}
+			}
+			&.full{
+				.form-item-lab{
+					width: 100%;
+				}
+				.form-item-txt, .form-item-inp{
+					display: block;
+					position: relative;
+					width: 100%;
+					left: 0;
+					text-align: left;
+					height: initial;
+					min-height: @lineHeight;
+
+					input, textarea{
+						text-align: left;
+					}
+				}
+			}
+
+			&.lab3-txt7 {
+				.form-item-lab{
+					width: 30%;
+				}
+				.form-item-txt, .form-item-inp{
+					left: 30%;
+				}
+			}
+			&.lab3-txt7-remark{
+				.form-item-lab{
+					width: 30%;
+				}
+				.form-item-txt, .form-item-inp{
+					left: 30%;
+					right: 266px;
+				}
+			}
+
+
+			.form-item-lab{
+				width: 50%;
+				float: left;
+				height: @lineHeight;
+				line-height: @lineHeight;
+				font-size: 28px;
+				color: @color-222222;
+				.text-overflow();
+				text-align: left;
+			}
+			.form-item-txt{
+				line-height: @lineHeight;
+			}
+			.form-item-txt, .form-item-inp{
+				position: absolute;
+				top: 0;
+				right: 40px;
+				left: 50%;
+				height: @lineHeight;
+				font-size: 28px;
+				color: @color-222222;
+				text-align: right;
+				.text-overflow();
+			}
+			.form-inp{
+				width: 100%;
+				height: @lineHeight - 4px;
+				text-align: right;
+				border: none;
+				outline: none;
+				background: transparent;
+				.placeholder(#ddd, 28px, 'webfont-regular')
+			}
+			textarea.form-inp{
+				height: 6 * @lineHeight;
+				resize: none;
+			}
+		}
+	}
+}

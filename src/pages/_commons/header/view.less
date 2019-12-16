@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/**
+ * 头部 Less
+ * @authors AndyPan (pye-mail@163.com)
+ * @date    2019年8月21日13:56:30
+ */
+
+@import "../../../assets/less/commons/_mixins.less";
+
+.page-header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: @headerHeight;
+  background: @color-primary;
+
+  .head-back{
+    height: 50px;
+    color: #FFF;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    text-decoration: none;
+    outline: none;
+    padding-left: 30px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAjCAYAAACU9ioYAAABF0lEQVRIS63WOw7CMAwGYP8DR+CedKMT7QQbHJQTVEhGjpoqzdN5dIZPduz8LajzYeYnEd2JaALwQY/nYJaZmsEIJuivCUxgAtZXmMVqz7CESYnqljWYGsxgM4CXuynFCpn5QURLZL0CrFghM8vCyuL6TxTLgi1YEmzFomAPFoAZbAUQG0xwuMeUM9gLwKwNEQOOwkzLzHwjonekgqrK7P8F3Ijo4oFfAFdtm6ebMrzC/QyHte1OeQh6CofMtBcAq+ZMg7QZelNsBT1oMg9b0WzAtqCaxK4K2SK476kkjbwKismtAnfUfsP4qPmmOe6yZrec6RdRdYVatBostl/TsvvbxMt/a6ow037915ffETNL2ktSmWn/AUDBrMZVby4rAAAAAElFTkSuQmCC') 0 center no-repeat;
+    background-size: 20px 28px;
+  }
+  .head-title{
+    height: @headerHeight;
+    line-height: @headerHeight;
+    position: absolute;
+    left: 100px;
+    right: 100px;
+    top: 0;
+    text-align: center;
+    font-size: 28px;
+    color: #FFF;
+  }
+}

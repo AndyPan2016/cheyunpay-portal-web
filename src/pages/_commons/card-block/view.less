@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/**
+ *  Less
+ * @authors AndyPan (pye-mail@163.com)
+ * @date    2019年9月28日13:20:07
+ */
+
+@import "../../../assets/less/commons/_mixins.less";
+
+.card-block{
+  margin: 26px;
+  .block-head{
+    height: 115px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    .horizontal(@color-primary, @color-43D4F9);
+    .box-shadow(0 0 20px @color-cccccc);
+    position: relative;
+    .head-title{
+      display: inline-block;
+      margin: 0 auto;
+      margin-top: 40px;
+      height: 50px;
+      position: relative;
+      .title-line-left{
+        float: left;
+        width: 108px;
+        height: 4px;
+        position: relative;
+        .horizontal(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+        margin-top: 25px;
+        &::before{
+          content: '';
+          display: inline-block;
+          width: 100%;
+          height: 4px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-top: 4px dashed @color-888888;
+        }
+      }
+      .title-line-right{
+        float: left;
+        width: 108px;
+        height: 4px;
+        position: relative;
+        .horizontal(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+        margin-top: 25px;
+        &::before{
+          content: '';
+          display: inline-block;
+          width: 100%;
+          height: 4px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-top: 4px dashed @color-888888;
+        }
+      }
+      .title{
+        float: left;
+        height: 50px;
+        line-height: 50px;
+        color: @color-ffffff;
+        font-size: 36px;
+        margin: 0 50px;
+        max-width: 310px;
+        .text-overflow();
+      }
+    }
+  }
+  .block-split{
+    @radius: 12px;
+    .block-split-head{
+      height: @radius;
+      overflow: hidden;
+      position: relative;
+      .horizontal(@color-primary, @color-43D4F9);
+      i{
+        display: inline-block;
+        position: absolute;
+        height: 2px;
+        border-top: 2px dashed @color-888888;
+        left: @radius;
+        right: @radius;
+        bottom: 0;
+      }
+      &::before{
+        content: '';
+        display: inline-block;
+        width: @radius;
+        height: @radius * 2;
+        border-top-right-radius: @radius * 2;
+        border-bottom-right-radius: @radius * 2;
+        background: @color-F8F8F8;
+        position: absolute;
+        bottom: -@radius;
+        left: 0px;
+        box-shadow: inset 0px 15px 15px -15px #ccc,
+          inset -15px 0px  15px -15px #ccc,
+          inset 0px -15px 15px -15px #ccc;
+      }
+      &::after{
+        content: '';
+        width: @radius;
+        height: @radius * 2;
+        border-top-left-radius: @radius * 2;
+        border-bottom-left-radius: @radius * 2;
+        background: @color-F8F8F8;
+        position: absolute;
+        bottom: -@radius;
+        right: 0;
+        box-shadow: inset 0px 15px 15px -15px #ccc,
+          inset 15px 0 15px -15px #ccc,
+          inset 0px -15px 15px -15px #ccc;
+      }
+    }
+    .block-split-body{
+      height: @radius;
+      overflow: hidden;
+      position: relative;
+      background: @color-ffffff;
+      &::before{
+        content: '';
+        display: inline-block;
+        width: @radius;
+        height: @radius * 2;
+        border-top-right-radius: @radius * 2;
+        border-bottom-right-radius: @radius * 2;
+        background: @color-F8F8F8;
+        position: absolute;
+        top: -@radius;
+        left: 0px;
+        box-shadow: inset 0px 15px 15px -15px #ccc,
+          inset -15px 0px  15px -15px #ccc,
+          inset 0px -15px 15px -15px #ccc;
+      }
+      &::after{
+        content: '';
+        width: @radius;
+        height: @radius * 2;
+        border-top-left-radius: @radius * 2;
+        border-bottom-left-radius: @radius * 2;
+        background: @color-F8F8F8;
+        position: absolute;
+        top: -@radius;
+        right: 0;
+        box-shadow: inset 0px 15px 15px -15px #ccc,
+          inset 15px 0 15px -15px #ccc,
+          inset 0px -15px 15px -15px #ccc;
+      }
+    }
+  }
+  .block-body{
+    padding: 26px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background: @color-ffffff;
+    .box-shadow(0 0 20px @color-cccccc);
+  }
+}

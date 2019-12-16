@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/**
+ * 账号切换 Less
+ * @authors AndyPan (pye-mail@163.com)
+ * @date    2019年9月17日11:30:25
+ */
+
+@import "../../../assets/less/commons/_mixins.less";
+@import "../../../assets/less/common.less";
+
+.page-account-switch{
+    .account-item{
+        margin: 8px 12px;
+        height: 216px;
+        background: url(../../../assets/images/background/bg-account.png) 0 0 no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 26px;
+            height: 43px;
+            position: absolute;
+            right: 46px;
+            top: 50%;
+            margin-top: -22px;
+            background: url(../../../assets/images/icon/icon-arrow-switch.png) 0 0 no-repeat;
+            background-size: 100% 100%;
+        }
+        &.current {
+            background: url(../../../assets/images/background/bg-account-current.png) 0 0 no-repeat;
+            background-size: 100% 100%;
+            .account-number, .account-money{
+                color: @color-primary;
+                .number, .money{
+                    color: @color-primary;
+                }
+            }
+            &::after {
+                display: none;
+            }
+        }
+        .account-number, .account-money{
+            padding-left: 48px;
+            padding-right: 82px;
+            .text-overflow();
+            font-size: 28px;
+            color: @color-999999;
+            text-align: left;
+            margin-top: 46px;
+            float: left;
+            width: 100%;
+            .label {
+                height: 50px;
+                line-height: 50px;
+                float: left;
+            }
+            .number, .money{
+                height: 50px;
+                line-height: 50px;
+                color: @color-222222;
+                font-size: 36px;
+                font-weight: bold;
+                margin-left: 20px;
+                float: left;
+            }
+            .money{
+                font-weight: normal;
+                font-size: 28px;
+            }
+        }
+        .account-money{
+            margin-top: 14px;
+        }
+    }
+}

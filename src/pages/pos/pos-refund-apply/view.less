@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/**
+ * POS退款申请 Less
+ * @authors AndyPan (pye-mail@163.com)
+ * @date    2019年9月29日17:33:07
+ */
+
+@import "../../../assets/less/commons/_mixins.less";
+@import "../../../assets/less/common.less";
+
+.page-main-pos{
+    padding-top: 20px;
+    .total-assets-wrap{
+        height: 232px;
+        margin: 14px 12px;
+        margin-bottom: 0;
+        background: url('../../../assets/images/background/bg-total-assets.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        .assets-label{
+            position: absolute;
+            top: 36px;
+            left: 48px;
+            right: 48px;
+            height: 44px;
+            line-height: 44px;
+            text-align: left;
+            .text-overflow();
+            font-size: 32px;
+            color: @color-ffffff;
+        }
+        .assets-value{
+            position: absolute;
+            left: 48px;
+            right: 48px;
+            bottom: 60px;
+            .text-overflow();
+            text-align: left;
+            height: 60px;
+            line-height: 60px;
+            color: @color-ffffff;
+            font-size: 60px;
+            font-family: 'bahnschrift';
+            padding-left: 40px;
+            &::before {
+                content: '￥';
+                float: left;
+                height: 60px;
+                line-height: 70px;
+                margin-left: -40px;
+                font-size: 36px;
+                font-weight: normal;
+            }
+        }
+    }
+    .refund-remark{
+        margin: 0 30px;
+        font-size: 24px;
+        line-height: 34px;
+        color: @color-999999;
+        text-align: left;
+    }
+    .pos-list-scroll{
+        top: 0;
+    }
+}

@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/**
+ * 我的摆牌二维码详情 Less
+ * @authors AndyPan (pye-mail@163.com)
+ * @date    2019年9月28日13:11:52
+ */
+
+@import "../../../assets/less/commons/_mixins.less";
+@import "../../../assets/less/common.less";
+
+.page-qrcode-detail{
+    text-align: center;
+    padding-bottom: 110px;
+    .qrcode-name{
+        margin-top: 40px;
+        height: 44px;
+        line-height: 44px;
+        color: @color-333333;
+        font-size: 32px;
+        .text-overflow();
+    }
+    .qrcode-date{
+        margin-top: 30px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 28px;
+        color: @color-cccccc;
+    }
+    .qrcode-wrap{
+        margin-top: 60px;
+        .qrcode-thumb{
+            display: inline-block;
+            width: 320px;
+            height: 320px;
+            overflow: hidden;
+            img{
+                width: 320px;
+                height: 320px;
+            }
+        }
+    }
+    .qrcode-number-wrap{
+        margin-top: 60px;
+        .number{
+            display: inline-block;
+            height: 88px;
+            border: 2px solid @color-eeeeee;
+            padding: 0 40px;
+            line-height: 88px;
+            color: @color-222222;
+            font-size: 32px;
+            font-weight: bold;
+        }
+    }
+    .qrcode-bottom{
+        margin-top: 40px;
+        margin-bottom: 60px;
+        .ui-button {
+            border-radius: 40px;
+        }
+    }
+    .download-qrcode{
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}

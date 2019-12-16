@@ -1,0 +1,276 @@
+/**
+ * 图标(icon)样式
+ * authors AndyPan (pye-mail@163.com)
+ * date    2019年9月4日23:07:40
+ */
+
+.icon {
+    display: inline-block;
+}
+
+.icon-nav {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background: #cccccc;
+}
+
+.icon-nav-assets, .icon-nav-recharge, .icon-nav-withdrawal, .icon-nav-transfer {
+    padding-top: 64px;
+    position: relative;
+    &::before{
+        content: '';
+        display: inline-block;
+        width: 64px;
+        height: 64px;
+        position: absolute;
+        left: 50%;
+        margin-left: -32px;
+        top: 0;
+        // background: @color-cccccc;
+    }
+}
+.icon-nav-assets{
+    &::before{
+        background: url('../images/icon/icon-nav-assets.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.icon-nav-recharge{
+    &::before{
+        background: url('../images/icon/icon-nav-recharge.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.icon-nav-withdrawal{
+    &::before{
+        background: url('../images/icon/icon-nav-withdrawal.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.icon-nav-transfer{
+    &::before{
+        background: url('../images/icon/icon-nav-transfer.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.icon-bill, .icon-pos, .icon-qrcode, .icon-polymerize, .icon-wealth,
+.icon-deposit, .icon-refund, .icon-online-apply, .icon-apply-record,
+.icon-my-qrcode, .icon-qrcode-record{
+    padding-left: 78px;
+    position: relative;
+    &::before{
+        content: '';
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        top: 50%;
+        margin-top: -24px;
+        left: 0;
+        // background: @color-cccccc;
+    }
+}
+.icon-bill{
+    &::before {
+        background: url('../images/icon/icon-bill.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.icon-pos {
+    &::before {
+        background: url('../images/icon/icon-pos.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.icon-qrcode{
+    &::before {
+        background: url('../images/icon/icon-qrcode.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.icon-polymerize{
+    &::before {
+        background: url('../images/icon/icon-polymerize.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.icon-wealth{
+    &::before {
+        background: url('../images/icon/icon-wealth.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.icon-deposit{
+    &::before {
+        background: url('../images/icon/icon-deposit.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.icon-my-qrcode{
+    &::before {
+        background: url('../images/icon/icon-my-qrcode.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.icon-qrcode-record{
+    &::before {
+        background: url('../images/icon/icon-qrcode-record.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.icon-deposit-right, .icon-pos-record{
+    padding-right: 58px;
+    position: relative;
+    &::after{
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: inline-block;
+        content: '';
+        width: 48px;
+        height: 48px;
+    }
+}
+.icon-deposit-right{
+    &::after{
+        background: url('../images/icon/icon-deposit.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.icon-pos-record{
+    &::after{
+        background: url('../images/icon/icon-pos-record.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.icon-refund{
+    &::before {
+        background: url('../images/icon/icon-refund.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.icon-online-apply{
+    &::before {
+        background: url('../images/icon/icon-online-apply.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.icon-apply-record{
+    &::before {
+        background: url('../images/icon/icon-apply-record.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.icon-radio {
+    &::after {
+        background: url('../images/icon/icon-radio.png') right center no-repeat;
+        background-size: 32px 32px;
+    }
+    
+    &.icon-radio-checked {
+        &::after {
+            background: url('../images/icon/icon-radio-checked.png') right center no-repeat;
+            background-size: 32px 32px;
+        }
+    }
+}
+
+.icon-upload-idcard {
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -45px;
+        // .border-radius(100%);
+        background: url('../images/icon/icon-upload.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.icon-status-success, .icon-status-wait, .icon-status-fail {
+    position: relative;
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 216px;
+        height: 216px;
+        position: absolute;
+        top: 88px;
+        left: 50%;
+        margin-left: -108px;
+    }
+}
+.icon-status-success {
+    &::before {
+        background: url('../images/icon/icon-verify-success.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.icon-status-wait {
+    &::before {
+        background: url('../images/icon/icon-verify-wait.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.icon-status-fail {
+    &::before {
+        background: url('../images/icon/icon-verify-fail.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.icon-reset-phone {
+    padding-left: 66px;
+    background: url('../images/icon/icon-phone.png') 0 center no-repeat;
+    background-size: 44px 44px;
+}
+.icon-wx-bind{
+    padding-left: 68px;
+    position: relative;
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 48px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        background: url('../images/icon/icon-wx-bind.png') 0 center no-repeat;
+        background-size: 48px 48px;
+    }
+}
+
+.icon-status-bind-card{
+    position: relative;
+    &::before{
+        display: inline-block;
+        width: 216px;
+        height: 196px;
+        content: '';
+        position: absolute;
+        top: 88px;
+        left: 50%;
+        margin-left: -108px;
+        background: url('../images/icon/icon-bind-card.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.icon-record-wx {
+    background: url('../images/icon/icon-wx-bind.png') 0 center no-repeat;
+    background-size: 42px 42px;
+    padding-left: 62px;
+}
+.icon-record-zfb {
+    background: url('../images/icon/icon-zfb.png') 0 center no-repeat;
+    background-size: 42px 42px;
+    padding-left: 62px;
+}

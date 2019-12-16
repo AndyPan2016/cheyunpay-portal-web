@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/**
+ * 银行账户管理 Less
+ * @authors AndyPan (pye-mail@163.com)
+ * @date    2019年9月18日22:17:03
+ */
+
+@import "../../../assets/less/commons/_mixins.less";
+@import "../../../assets/less/common.less";
+
+
+
+.page-main-accountmanage{
+    @hdHeight: 100px;
+    .tab-hd{
+        height: @hdHeight;
+        background: @color-ffffff;
+        text-align: center;
+        .tab-hd-wrap{
+            display: inline-block;
+            .tab-route-item{
+                display: inline-block;
+                // width: 170px;
+                margin: 0 60px;
+                height: @hdHeight;
+                line-height: @hdHeight;
+                text-align: center;
+                text-decoration: none;
+                outline: none;
+                font-size: 30px;
+                color: @color-cccccc;
+                position: relative;
+                &.router-link-active, &.active{
+                    color: @color-222222;
+                    
+                    &::after{
+                        display: inline-block;
+                        content: '';
+                        border-bottom: 4px solid @color-primary;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .route-view-wrap{
+        position: absolute;
+        top: @hdHeight;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+}

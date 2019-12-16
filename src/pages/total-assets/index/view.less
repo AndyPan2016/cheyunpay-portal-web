@@ -1,0 +1,187 @@
+@charset "UTF-8";
+/**
+ * 总资产 Less
+ * @authors AndyPan (pye-mail@163.com)
+ * @date    2019年9月23日15:48:49
+ */
+
+@import "../../../assets/less/commons/_mixins.less";
+@import "../../../assets/less/common.less";
+
+.page-total-assets{
+    .assets-hd{
+        background: @color-ffffff;
+    }
+    .total-assets-wrap{
+        height: 232px;
+        margin: 14px 12px;
+        margin-bottom: 0;
+        background: url('../../../assets/images/background/bg-total-assets.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        .assets-label{
+            position: absolute;
+            top: 36px;
+            left: 48px;
+            right: 48px;
+            height: 44px;
+            line-height: 44px;
+            text-align: left;
+            .text-overflow();
+            font-size: 32px;
+            color: @color-ffffff;
+        }
+        .assets-value{
+            position: absolute;
+            left: 48px;
+            right: 48px;
+            bottom: 60px;
+            .text-overflow();
+            text-align: left;
+            height: 60px;
+            line-height: 60px;
+            color: @color-ffffff;
+            font-size: 60px;
+            font-family: 'bahnschrift';
+            padding-left: 40px;
+            &::before {
+                content: '￥';
+                float: left;
+                height: 60px;
+                line-height: 70px;
+                margin-left: -40px;
+                font-size: 36px;
+                font-weight: normal;
+            }
+        }
+    }
+    .total-assets-detail {
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: row;
+        height: 128px;
+        position: relative;
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 1px;
+            height: 80px;
+            background: @color-cccccc;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+        }
+        .balance, .en-route{
+            flex-grow: 1;
+            text-align: center;
+        }
+        .assets-detail-label{
+            height: 34px;
+            font-size: 24px;
+            color: @color-cccccc;
+        }
+        .assets-detail-money{
+            height: 44px;
+            line-height: 44px;
+            font-size: 44px;
+            color: @color-222222;
+            margin-top: 20px;
+            font-family: 'bahnschrift';
+            label {
+                padding-left: 30px;
+                display: inline-block;
+                &::before{
+                    content: '￥';
+                    font-size: 28px;
+                    float: left;
+                    margin-left: -30px;
+                    line-height: 55px;
+                }
+            }
+        }
+    }
+    .assets-report{
+        margin: 20px auto;
+        background: @color-ffffff;
+        height: 424px;
+        padding: 40px 30px;
+        position: relative;
+        // display: -webkit-flex;
+        // display: flex;
+        // flex-direction: row;
+        .report-data, .report-cont{
+            // flex-grow: 1;
+            text-align: left;
+            width: 50%;
+            height: 100%;
+            float: left;
+            // .echart-wrap{
+            //     width: 80%;
+            //     height: 100%;
+            //     // margin-right: -50%;
+            // }
+        }
+        .report-cont{
+            text-align: center;
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            left: 50%;
+            bottom: 40px;
+            float: inherit;
+            width: auto;
+            height: auto;
+        }
+        .data-item{
+            margin-bottom: 30px;
+            .data-item-label{
+                height: 34px;
+                font-size: 24px;
+                line-height: 34px;
+                padding-left: 40px;
+                &::before{
+                    width: 20px;
+                    height: 20px;
+                    content: '';
+                    float: left;
+                    margin-left: -40px;
+                    background: @color-222222;
+                    border-radius: 4px;
+                    margin-top: 7px;
+                }
+            }
+            .data-item-money{
+                margin-top: 10px;
+                font-size: 32px;
+                color: @color-222222;
+                font-family: 'bahnschrift';
+                height: 44px;
+                line-height: 44px;
+                padding-left: 40px;
+                &::before{
+                    content: '￥';
+                    float: left;
+                    margin-left: -40px;
+                }
+            }
+
+            &.balance {
+                .data-item-label{
+                    color: @color-FE6E78;
+                    &::before{
+                        .vertical(@color-FFC985, @color-FE5E76);
+                    }
+                }
+            }
+            &.en-route {
+                .data-item-label{
+                    color: @color-3B9BEE;
+                    &::before{
+                        .vertical(@color-43D4F9, @color-primary);
+                    }
+                }
+            }
+        }
+    }
+}
+

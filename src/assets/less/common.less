@@ -1,0 +1,175 @@
+/**
+ * 基础公共样式
+ * authors AndyPan (pye-mail@163.com)
+ * date    2018-06-06 12:00:00
+ */
+
+@import './icons.less';
+@import './buttons.less';
+
+html, body {
+  background: #F8F8F8;
+}
+.page-main {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #F8F8F8;
+}
+
+.ui-divider{
+  @dividerHeight: 44px;
+  display: block;
+  height: @dividerHeight;
+  margin: 30px auto;
+  text-align: center;
+  .divider-text{
+    display: inline-block;
+    font-size: 24px;
+    color: #ffffff;
+    border-radius: 30px;
+    padding: 0 40px;
+    height: @dividerHeight;
+    line-height: @dividerHeight;
+    background: #dddddd;
+    max-width: 90%;
+    -webkit-text-overflow:ellipsis;
+     -khtml-text-overflow: ellipsis;
+      -icab-text-overflow: ellipsis;
+       -moz-text-overflow: ellipsis;
+         -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+                 overflow: hidden;
+              white-space: nowrap;
+  }
+
+  &.divider-error {
+    .divider-text{
+      background: #FF3B30;
+    }
+  }
+}
+
+.upload-item{
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 350px;
+  background: url(../images/background/bg-idcard.png) center center no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 80px;
+
+  &.error {
+    background: url(../images/background/bg-idcard-error.png) center center no-repeat;
+    background-size: 100% 100%;
+    .upload-label{
+      color: #FF3B30;
+    }
+  }
+
+  &:last-child {
+      margin-bottom: 0;
+  }
+
+  .upload-label{
+      padding-top: 110px;
+      line-height: 40px;
+      font-size: 28px;
+      color: #222222;
+      position: absolute;
+      top: 50%;
+      margin-top: -75px;
+      left: 0;
+      display: inline-block;
+      width: 100%;
+  }
+
+  .upload-item-thumb{
+      display: inline-block;
+      margin: 20px;
+      width: 590px;
+      height: 310px;
+  }
+
+  .upload-inp{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+.pwd-wrap{
+  padding: 80px 20px;
+  background: #ffffff;
+  .pwd-panel-title {
+    display: inline-block;
+    width: 100%;
+    // height: 100px;
+    // line-height: 100px;
+    font-size: 28px;
+    color: #222222;
+    text-align: center;
+    .bold{
+        display: inline-block;
+        padding: 0 10px;
+        font-weight: bold;
+        color: #222222;
+        font-size: 32px;
+    }
+  }
+  .pwd-panel-remark{
+    margin-top: 20px;
+    font-size: 28px;
+    color: #cccccc;
+    text-align: center;
+  }
+}
+
+.btn-wrap, .button-wrap{
+  margin: 0 30px;
+  margin-top: 100px;
+}
+
+/**
+ * 占位符placeholder样式设置
+ * @color 字体颜色
+ * @font-size 字体大小
+ * @font-family 字体
+ */
+ .placeholder(@color: #999, @font-size: 14px, @font-family: '宋体') {
+  &::-webkit-input-placeholder {
+      font-family: @font-family;
+      font-size: @font-size;
+      color: @color;
+  }
+  &:-moz-placeholder{
+      font-family: @font-family;
+      font-size: @font-size;
+      color: @color;
+  }
+  &::-moz-placeholder{
+      font-family: @font-family;
+      font-size: @font-size;
+      color: @color;
+  }
+  &:-ms-input-placeholder{
+      font-family: @font-family;
+      font-size: @font-size;
+      color: @color;
+  }
+  &:placeholder {
+      font-family: @font-family;
+      font-size: @font-size;
+      color: @color;
+  }
+}
+input{
+  cursor: pointer;
+  padding: 0;
+  .placeholder(#dddddd, 28px, 'webfont-regular')
+}
